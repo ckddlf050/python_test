@@ -176,34 +176,127 @@
 # print(a.mul())
 # print(a.div())
 
-class Employee:
-    serial_num = 1000
+# class Employee:
+#     serial_num = 1000
 
-    def __init__(self,name):
-        Employee.serial_num +=1
-        self.id = Employee.serial_num
-        self.name = name
+#     def __init__(self,name):
+#         Employee.serial_num +=1
+#         self.id = Employee.serial_num
+#         self.name = name
     
-    def __str__(self):
-        return "사번 : {}, 이름 : {}".format(self.id,self.name)
+#     def __str__(self):
+#         return "사번 : {}, 이름 : {}".format(self.id,self.name)
     
 
-e1 = Employee("최사원")
-print(e1)
+# e1 = Employee("최사원")
+# print(e1)
 
-e2 = Employee("안사원")
-print(e2)
+# e2 = Employee("안사원")
+# print(e2)
 
-e3 = Employee("한사원")
-print(e3)
+# e3 = Employee("한사원")
+# print(e3)
 
 
-employee = [
-    Employee('구름'),
-    Employee('별'),
-    Employee('행성'),
-    Employee('달')
-]
-for i in employee:
-    print(i)
-print("\n".join(map(str, employee)))
+# employee = [
+#     Employee('구름'),
+#     Employee('별'),
+#     Employee('행성'),
+#     Employee('달')
+# ]
+# for i in employee:
+#     print(i)
+# print("\n".join(map(str, employee)))
+
+# class Supermarket:
+#     count = 0
+
+#     def __init__(self,location,name,product,customer):
+#         self.__location = location
+#         self.__name = name
+#         self.__product = product
+#         self.__customer = customer
+#         Supermarket.count +=1
+    
+#     def print_location(self):
+#         print(self.__location)
+    
+#     def change_category(self,product1):
+#         self.__product = product1
+        
+#     def show_list(self):
+#         print(self.__product)
+    
+#     def enter_customer(self):
+#         self.__customer += 1
+
+#     def show_info(self):
+#         print("가게이름:{} 위치:{} 파는물건:{},손님수{}".format(self.__name,self.__location,self.__product,self.__customer))
+
+#     def show_supermarket_count():
+#         print(f"인스턴스 개수:{Supermarket.count}")
+
+# x=Supermarket("강남","코다차야","김볶밥",3)
+# x.print_location()
+# x.change_category("홍합탕")
+# x.show_list()
+# x.enter_customer()
+# x.show_info()
+# Supermarket.show_supermarket_count()
+
+# class Country:
+#     def __init__(self):
+#         self.name = "나라이름"
+#         self.population = "인구"
+#         self.capital = "수도"
+    
+#     def show(self):
+#         print("국가 클래스의 메소드입니다")
+
+# class korea(Country):
+#     def __init__(self,name):
+#         self.name = name
+    
+#     def show(self):
+#         print("국가 이름은:", self.name)
+
+# country = korea("대한민국")
+# country.show()
+# print(country.name)
+# country.show()
+
+# class Calculator():
+#     def __init__(self):
+#         self.value = 100
+    
+#     def sub(self,value):
+#         self.value -= value
+    
+# class MinLimitCalculator(Calculator):
+#     def sub(self,value):
+#         self.value -= value
+#         self.value = max(0,self.value-value)
+        
+
+# cal =MinLimitCalculator()
+# cal.sub(20)
+# cal.sub(90)
+# print(cal.value)
+
+# class Calculator():
+#     def __init__(self):
+#         self.value = 100
+
+#     def sub(self,value):
+#         self.value -= value 
+    
+#     #파이썬은 메소드 오버로드 안됨
+#     def sub(self):
+#         self.value -=10
+#     #파이썬은 메소드 오버로드 안됨
+#     def sub(self,value1,value2):
+#         self.value = value1 -value2
+    
+#     def sub(self,*argss):
+#         self.value = argss[0]
+
