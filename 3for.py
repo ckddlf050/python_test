@@ -27,7 +27,7 @@
 #입력한 숫자만큼 카운트하고 발사 출력
 # num = int(input("몇초?"))
 # for i in range(num,0,-1):
-#     print(i,end = "")
+#     print(i,end = " ")
 # print("발사")
 
 #구구단 만들기

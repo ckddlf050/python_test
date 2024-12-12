@@ -250,6 +250,17 @@
 # print(calc_avg(1,2))
 # print(calc_avg(1,2,3,4,5))
 
+# ----------------------
+# def b():    #함수안에 함수 가능
+#     def c():
+#         print("c")
+#     c()
+# b()
+# -------------------------
+# l = ["p","y","t","h","o","n"]
+# print("".join(l))
+#----------------------------
+
 # def a():
 #     return 1,2
 # print(a())
@@ -260,7 +271,6 @@
 #         print(f"{key}:{value}")
 #     for i in kwargs:
 #         print(f"{i}")
-
 
 # introduce(name="Alice",age=25,city="New York")
 
@@ -279,6 +289,19 @@
 # print(int(4.6+0.5))
 # print(round(4.5))
 # print(round(125,-1))
+
+# n=5
+# factorial = 1
+
+# for i in range(1,n+1):
+# 	factorial *= i
+# print(factorial)
+
+# def factorial(n):
+#     if n ==1:
+#         return 1
+#     return n * factorial(n-1)
+# print(factorial(5))
 
 # def hello():
 #     global a
@@ -371,10 +394,10 @@
 # value = list(filter(lambda x:x>0,li))
 # print(value)    #[-5,-11]
 
-# li = [-5,1,2,-11,76]
+li = [-5,1,2,-11,76]
 
-# value = list(filter(lambda x:x>=3,map(lambda x:2*x,li)))
-# print(value)    
+value = list(filter(lambda x:x>=3,map(lambda x:2*x,li)))
+print(value)    
 
 # def solution(arr):
 #     answer = []
@@ -388,10 +411,11 @@
             
 #     return answer
 
-def solution(myString):
-    answer = []
-    a = myString.split("X")
-    for i in a:
-        answer.append(len(i))
+# def solution(myString):
+#     answer = []
+#     a = myString.split("X")
+#     for i in a:
+#         answer.append(len(i))
     
-    return answer
+#     return answer
+

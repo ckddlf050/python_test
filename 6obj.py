@@ -244,14 +244,14 @@
 # x.show_info()
 # Supermarket.show_supermarket_count()
 
-# class Country:
-#     def __init__(self):
-#         self.name = "나라이름"
-#         self.population = "인구"
-#         self.capital = "수도"
+class Country:
+    def __init__(self):
+        self.name = "나라이름"
+        self.population = "인구"
+        self.capital = "수도"
     
-#     def show(self):
-#         print("국가 클래스의 메소드입니다")
+    def show(self):
+        print("국가 클래스의 메소드입니다")
 
 # class korea(Country):
 #     def __init__(self,name):
